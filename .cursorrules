@@ -1,0 +1,25 @@
+General Rules:
+
+- Always output executable, copy-pastable commands when suggesting changes.
+- Always provide exact file diffs (patch-style) for modified files.
+- Never say "run this yourself" without providing the exact commands.
+- Keep changes minimal. Do NOT refactor unrelated files.
+
+Monorepo Rules:
+
+- This is a pnpm + Turborepo monorepo.
+- apps/admin MUST NOT be modified unless explicitly requested.
+- Shared UI components live in packages/ui only.
+- Do NOT install shadcn inside apps (web/seller/admin).
+
+Tech Rules:
+
+- Tailwind v4 is used.
+- Tailwind dependency is per app; Tailwind config is shared.
+- Validation uses zod.
+- Data fetching uses TanStack Query.
+
+Output Rules:
+
+- Prefer commands first, then file diffs.
+- If required context is missing, ask for specific files instead of giving generic advice.
